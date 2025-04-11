@@ -1,59 +1,57 @@
-# LaravelTestFront
+# Laravel Test Front (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+Este projeto é um frontend Angular desenvolvido como parte de um teste técnico para a empresa Inicie. Utiliza a versão mais recente do Angular e Tailwind CSS 4.1 para construção da interface.
 
-## Development server
+## 📦 Tecnologias
 
-To start a local development server, run:
+- Angular (mais recente via CLI)
+- TypeScript
+- SCSS
+- Tailwind CSS 4.1
+
+## 📁 Estrutura do Projeto
+
+- `src/app` – Componentes e serviços principais
+- `src/assets` – Imagens e arquivos estáticos
+- `src/styles.scss` – Estilos globais e configuração do Tailwind
+- `src/environments` – Configurações de ambiente (`apiUrl`, etc.)
+
+## ⚙️ Configuração de Ambiente
+
+No arquivo `src/environments/environment.ts`, configure a URL da API:
+
+```ts
+export const environment = {
+  production: false,
+  apiUrl: "http://localhost:8000/api",
+};
+```
+
+## 🚀 Como Rodar o Projeto
+
+1. Instale as dependências:
+
+```bash
+npm install
+```
+
+2. Inicie o servidor de desenvolvimento:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+O projeto estará disponível em `http://localhost:4200`.
 
-## Code scaffolding
+## 🎨 Tailwind CSS
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Tailwind já está configurado na versão 4.1. Você pode usar qualquer utilitário diretamente nos templates Angular. Os estilos globais podem ser adicionados em `styles.scss`.
 
-```bash
-ng generate component component-name
-```
+## 📌 Observações
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica.
+- Não contém backend.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Feito com 💻 por Rodrigo Portillo (VelhoBit)
